@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Emotion Recognition</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body style="background-color: #000000;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="margin-left: -50px; font-size: 25px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-mic" viewBox="0 0 16 16" style="color: #ffffff;">
+                    <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                    <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3"/>
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="font-family: 'Poppins', sans-serif; font-size: 20px; padding-top: 8px; margin-left: 900px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('abstract') }}">Abstract</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('notebook') }}">Notebook</a>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+    </nav>
+
+    <div style="margin-top: 50px; background: #000000; margin-left: 100px; margin-right: 100px; border-radius: 10px; border: 5px solid #000000;">
+        <div style="background-color: #000000;">
+            <div style="color: #f96d00; font-size: 30px; font-family: 'Poppins', sans-serif; text-align: center;"><b>ABSTRACT</b></div>
+            <br>
+            <div style="margin-left: 100px; margin-right: 100px;">
+                <p style="text-align: justify; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; ">Understanding emotions is critical to many fields, including psychology, medicine, and human-computer interaction. The project uses datasets from RAVDESS, SAVEE, CREMA, and TESS which cover a wide spectrum of emotions, including neutral, surprise, happiness, sadness, disgust, anger, and fear to thoroughly investigate machine learning algorithms for emotion identification in audio data. Long short-term memory (LSTM) networks, decision trees, and convolutional neural networks (CNNs) are the three different models that are investigated. Decision trees provide simple classification, LSTMs extract temporal correlations from the data, and CNNs are excellent at extracting features from audio signals. Performance indicators like recall, F1, precision, and accuracy score are used in performance evaluation. Significantly, the CNN model outperforms Decision Trees and LSTM networks with 72% and 77%, respectively, in emotion categorization accuracy, reaching a remarkable 91%. This work offers insightful information about how well different machine learning models perform when it comes to audio-based emotion recognition. These realizations will have a big impact on developing trustworthy emotion detection systems for emotional computing, human-robot interaction, and mental health assessment. Future studies could investigate ensemble approaches or hybrid models to improve emotion detection capabilities and progress the creation of increasingly intricate and accurate emotion recognition systems.</p>
+            </div>        
+        </div>
+    </div>
+
+    <div style="background-color: white; text-align: center; font-family: 'Poppins', sans-serif; margin-top: 30px; padding: 100px;">
+        <div style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 40px; color: #f96d00; margin-left: 30px;">Thank You</div>
+        <div style="display: flex; justify-content: space-evenly; margin-left: 100px; margin-right: 130px; margin-top: 50px; font-size: 30px;">
+            <div style="margin-left: -70px; ">
+                <p>B. Venkata Siviah</p>
+                <h5 style="margin-top: -10px;">Project Guide</h5>
+            </div>
+            <div style="margin-left: -35px;">
+                <p>P. Yogendra Prasad</p>
+                <h5 style="margin-top: -10px;">Project Coordinator</h5>
+            </div>
+            <div style="margin-left: -70px;">
+                <p>K. Ramani</p>
+                <h5 style="margin-top: -10px;">Dept. Head</h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
