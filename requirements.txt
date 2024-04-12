@@ -1,7 +1,7 @@
 tensorflow
-scikit-learn==1.0.2 
-markupsafe==2.0.1
-werkzeug==0.16.0
-librosa==0.8.1
-numba==0.53.1
-pyaudio==0.2.13
+scikit-learn 
+markupsafe
+werkzeug
+librosa
+numba
+pyaudio
