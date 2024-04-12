@@ -4,3 +4,4 @@ markupsafe
 werkzeug
 librosa
 numba
+flask
